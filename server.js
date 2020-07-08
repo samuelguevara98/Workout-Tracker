@@ -18,7 +18,7 @@ db.on("error", error => {
     console.log("Encountered a database error!", error);
 });
 
-mongoose/connect(process.env/MONGODB_URI || "mongodb://localhost/workout", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
     useNewUrlParser: true,
     useFindAndModify: false
 });
